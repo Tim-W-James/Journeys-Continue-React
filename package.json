@@ -1,19 +1,19 @@
 {
-  "name": "project_title",
+  "name": "journeys-continue",
   "version": "0.0.0",
-  "description": "project_description :rocket:",
+  "description": ":rocket:",
   "author": "Tim James",
   "license": "SEE LICENSE IN LICENSE.txt",
-  "homepage": "https://github.com/Tim-W-James/repo_name#readme",
+  "homepage": "https://github.com/Tim-W-James/Journeys-Continue#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tim-W-James/repo_name.git"
+    "url": "git+https://github.com/Tim-W-James/Journeys-Continue.git"
   },
   "keywords": [
-    "project_keywords"
+    "journeys continue"
   ],
   "bugs": {
-    "url": "https://github.com/Tim-W-James/repo_name/issues"
+    "url": "https://github.com/Tim-W-James/Journeys-Continue/issues"
   },
   "type": "module",
   "main": "src/main.ts",

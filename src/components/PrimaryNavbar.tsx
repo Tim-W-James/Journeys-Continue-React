@@ -13,7 +13,7 @@ const PrimaryNavbar: React.FC = () => (
           height="30"
           className="d-inline-block align-top"
         />{" "}
-        project_title
+        Journeys Continue Website
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

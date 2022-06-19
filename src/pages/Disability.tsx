@@ -6,6 +6,7 @@ import { useDocumentTitle } from "./PageUtils";
 const Disability: React.FC = () => {
   useDocumentTitle("Disability");
 
+  // hack
   document.getElementById("basic-nav-dropdown")?.classList.add("active");
   return (
     <>

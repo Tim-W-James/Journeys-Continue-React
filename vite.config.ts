@@ -13,6 +13,9 @@ export default defineConfig({
       "@assets": path.resolve(__dirname, "/assets"),
     },
   },
+  esbuild: {
+    logOverride: { "this-is-undefined-in-esm": "silent" },
+  },
   plugins: [
     react(),
     eslintPlugin(),

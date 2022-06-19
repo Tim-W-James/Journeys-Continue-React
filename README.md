@@ -12,13 +12,13 @@
 <br />
 <p align="center">
    <a href="https://github.com/Tim-W-James/Journeys-Continue">
-    <img src="images/journeysContinueLogo.png" alt="Logo" width="118" height="80">
+    <img src="./public/assets/logo.jpg" alt="Logo" width="240">
   </a>
 
   <h2 align="center">Journeys Continue Website</h2>
 
   <p align="center">
-    Website for Journeys Continue, an Australian business for social work, disability and aged care services: https://journeyscontinue.com.au/
+    Website for Journeys Continue, an Australian business for social work, disability and aged care services: <a href="https://journeyscontinue.com.au/">https://journeyscontinue.com.au/</a>
     <br />
 <!--     <a href="https://github.com/Tim-W-James/Journeys-Continue"><strong>Explore the docs »</strong></a>
     <br /> 
@@ -30,8 +30,6 @@
     <a href="https://github.com/Tim-W-James/Journeys-Continue/issues">Request Feature</a> -->
   </p>
 </p>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -50,6 +48,7 @@
 </details>
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
@@ -58,6 +57,7 @@ Website created for Journeys Continue, an Australian business for social work, d
 Various functions of the site will not function (links due to the use of .htaccess, etc.) in the repo, so visit the site here: [journeyscontinue.com.au/](https://journeyscontinue.com.au/).
 
 <!-- CONTACT -->
+
 ## Contact
 
 Email: [tim.jameswork9800@gmail.com](mailto:tim.jameswork9800@gmail.com "tim.jameswork9800@gmail.com")

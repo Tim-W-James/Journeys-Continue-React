@@ -1,41 +1,60 @@
-import logo from "@assets/logo.svg";
+import logo from "@assets/logo.jpg";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+
+const NavbarItem: React.FC<{
+  path: string;
+  text: string;
+}> = ({ path, text }) => {
+  const location = useLocation();
+
+  return (
+    <Link
+      className={`nav-link nav-item${
+        location.pathname === path ? " active" : ""
+      }`}
+      to={path}
+    >
+      {text}
+    </Link>
+  );
+};
 
 const PrimaryNavbar: React.FC = () => (
-  <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
-    <Container>
+  <Navbar className="bg-white" expand="lg" sticky="top">
+    <Container className="navbar-underline align-items-end">
       <Navbar.Brand as={Link} to="/">
         <img
-          alt=""
           src={logo}
-          width="30"
-          height="30"
+          alt="Journeys Continue Logo"
+          width="160"
           className="d-inline-block align-top"
         />{" "}
-        Journeys Continue Website
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="me-auto">
-          <Link className="nav-link" to="/">
-            Home
-          </Link>
-          <Link className="nav-link" to="/form">
-            Example Form
-          </Link>
-          <NavDropdown
-            title="Dropdown"
-            id="basic-nav-dropdown"
-            menuVariant="dark"
-          >
-            <Link className="dropdown-item" to="dropdown/1">
-              Action
+        <Nav className="justify-content-end flex-grow-1 pe-3">
+          <NavbarItem path="/" text="Home" />
+          <NavDropdown id="basic-nav-dropdown" title="About Us">
+            <Link className="dropdown-item" to="disability">
+              Disability
             </Link>
-            <Link className="dropdown-item" to="dropdown/2">
-              Another Action
+            <Link className="dropdown-item" to="aged-care">
+              Aged Care
+            </Link>
+            <Link className="dropdown-item" to="supporting-carers">
+              Supporting Carers
+            </Link>
+            <Link className="dropdown-item" to="professional-supervision">
+              Professional Supervision
+            </Link>
+            <Link className="dropdown-item" to="who-we-are">
+              Who We Are
             </Link>
           </NavDropdown>
+          <NavbarItem path="/resources" text="Resources" />
+          <NavbarItem path="/contact" text="Contact Us" />
+          <NavbarItem path="/fees" text="Fees" />
         </Nav>
       </Navbar.Collapse>
     </Container>

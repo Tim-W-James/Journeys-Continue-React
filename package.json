@@ -18,7 +18,7 @@
   "type": "module",
   "main": "src/main.ts",
   "scripts": {
-    "dev": "vite --open",
+    "dev": "vite",
     "dev:https": "vite --open --https",
     "build": "tsc && vite build",
     "preview": "vite preview --host",
